@@ -1,0 +1,386 @@
+
+
+body{
+	margin: 0px;
+
+}
+.binicio{
+	position: fixed;
+	right: 0;
+	top: 550px;
+	z-index: 1500;
+}.binicio img{
+	width: 50px;
+	height: 50px;
+}
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	left: 0; /* Establecemos la barra en la izquierda */
+	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+	.social ul {
+		list-style: none;
+	}
+
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 10px 15px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+
+	.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+	.social ul li .icon-twitter {background: #00abf0;}
+	.social ul li .icon-google-plus {background: #d95232;}
+	.social ul li .icon-pinterest {background: #ae181f;}
+	.social ul li .icon-mail {background: #666666;}
+
+	.social ul li a:hover {
+		background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	left: 0; /* Establecemos la barra en la izquierda */
+	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+#header{
+	background-color: #080D40;
+	height: 100px;
+} 
+
+#encabezado{
+	width: 80%;
+	margin: auto;
+	height: 100%;
+}
+
+#navegacion{
+	float: right;
+	width: 350px;
+	height: 100%;
+}
+#logo{
+	
+	height: 100%;
+	margin: 0px;
+	font-family: 'Orbitron','helvetica';
+	color: #65e7c7;
+	float: left;
+	margin-top: 7px;
+	margin-right: 10px;
+}
+#encabezado img{
+ width: 100px;
+ height: 100px;
+ float: left;
+}
+#navegacion ul{
+	width: 350px;
+	margin:0px;
+	color: white;
+	display: flex;
+	justify-content: space-around;
+   	height: 100%;
+    font-weight: bold;
+    
+  
+}
+#navegacion li{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	width: 33%;
+	height: 100%;
+	transition: background 0.5s linear 0.2s;
+
+}
+#navegacion li:hover{
+	 animation-duration: 3s;
+		background-color: #2F529A;
+}
+#navegacion a{
+	text-decoration: none;
+}
+#navegacion a:visited{
+	color: white;
+}
+#cuerpo{
+	width: 80%;
+	margin: auto;
+	box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.52);
+}
+#principal{
+	width: 100%;
+	height: 600px;
+	margin: auto;
+	background-image: url('imagenes/datamining.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color: rgba(0, 0, 0, 0.3);
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	font-size: 40px;
+	text-align: center;
+
+}
+#principal:before{
+	width: 80%;
+    height: 600px;
+    position: absolute;
+    background-color: inherit;
+    content: ' ';
+}
+#principal h1{
+	
+	color: rgb(114, 255, 112);;
+	font-family: 'Russo One', sans-serif;
+	text-shadow: 0 0 2px #210707;
+}
+.arrow_box {
+	position: relative;
+	background: #7d0e0e;
+	border: 4px solid #7d0e0e;
+	text-align: center;
+	color: white;
+	font-size:30px;
+	width: 100%;
+    margin: auto;
+    border-radius:5px;
+}
+.arrow_box:after, .arrow_box:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(161, 58, 27, 0);
+	border-top-color: #7d0e0e;
+	border-width: 30px;
+	margin-left: -30px;
+}
+.arrow_box:before {
+	border-color: rgba(84, 42, 25, 0);
+	border-top-color: #7d0e0e;
+	border-width: 36px;
+	margin-left: -36px;
+}
+.seccion{
+	width: 100%;
+	height: 500px;
+	margin: auto;
+	background-color: rgba(0, 0, 0, 0.3);
+	
+}
+#introduccion{
+	
+	background-image: url('imagenes/bigdata.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+#introduccion p{
+	width: 80%;
+	font-size: 20px;
+	color: white;
+	background-color: rgba(200, 0, 0, 0.5);
+	text-align: justify;
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.52);
+}
+#introduccion a{
+	color: red;
+}
+#introduccion a:visited{
+ color: red;
+}
+#webmining{
+	height: 550px;
+	background-image: url('imagenes/webmining.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
+}
+
+#webmining p{
+	width: 30%;
+	margin: 0px;
+	font-size: 15px;
+	color:#390909;
+	background-color: rgba(195, 153, 153, 0.7);
+	text-align: justify;
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.52);
+	float: left;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+#contenido-articulos{
+	float: right;
+	width: 50%;
+	margin-top: 20px;
+}
+#contenido-articulos p{
+	width: 79%;
+	padding:10px; 
+	margin: 0px;
+	font-size: 20px;
+	margin-top: 30px;
+	margin-left: 20px;
+	background-color: rgba(231, 224, 149, 0.59);
+}
+#articulos{
+	width: 90%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	padding-top: 40px;
+}
+#articulos article{
+	background-color: #b92a2a;;
+	margin-right: 5px;
+	border-radius: 25%;
+
+	font-family: helvetica, cursive;
+	color: #ffb52e;
+    text-shadow: 0 0 3px #282323;
+    border-bottom: 5px #452727 solid;
+
+}
+#articulos article:hover{
+	 border-top: 5px #452727 solid;
+	 border-bottom: 0px #452727 solid;
+}
+#articulos h2{
+	margin:0px;
+	width: 130px;
+	height: 80px;
+	padding: 10px;
+}
+#articulos a{
+	text-decoration: none;
+	color: #ffb52e;
+}
+#articulos a:visited{
+	color: #ffb52e;
+}
+footer{
+	margin-top: 20px;
+	width: 100%;
+	height:70px;
+	background-color: lightgray; 
+}
+footer h3{
+	margin: 0px;
+	margin-left: 20px;
+	padding-top: 10px;
+}
+footer p{
+	margin:0px;
+	margin-top: 10px;
+	margin-left: 30px;
+
+}
+
+#wcm{
+	height: 550px;
+	background-image: url('imagenes/web.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+		display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.caja-art{
+	width: 79%;
+}
+#wcm p{
+	width: 65%;
+	padding:20px; 
+	margin: 0px;
+	font-size: 20px;
+	margin-top: 30px;
+	margin: auto;
+	background-color: rgba(231, 224, 149, 0.59);
+	border-radius: 15px;
+
+}
+#wcm h2{
+	font-family: helvetica;
+    color: #5a2d2d;
+    text-align: center;
+    font-size: 40px;
+}
+#wem{
+	height: 550px;
+	background-image: url('imagenes/web.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#wem p{
+	width: 45%;
+	padding:20px; 
+	margin: 0px;
+	font-size: 20px;
+	
+	display: inline-block;
+	background-color: rgba(231, 224, 149, 0.59);
+	border-radius: 15px;
+
+}
+#wem h2{
+	font-family: helvetica;
+    color: #5a2d2d;
+    text-align: center;
+    font-size: 40px;
+}
+#wem img{
+	width: 300px;
+	height: 300px;
+	float: right;
+	border: 1px black solid;
+	box-shadow:  2px 2px 0 0 black;
+	border-radius: 15px;
+}
+#art{
+	display: inline-block;
+}
+#videos{
+	height: 1200px;
+	clear: both;
+}
+iframe{
+	 margin-top: 20px;
+}
